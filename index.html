@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="IOTA Address Generator">
+	<meta name="author" content="desarrolloactivo.com">
+
+	<title>IOTA Address Generator</title>
+</head>
+
+<body>
+  <label for="userSeed">Seed</label>
+  <input type="name" class="" id="userSeed" placeholder="Enter your seed">
+  <button type="button" id="saveSeed" class="">Save Seed</button>
+  <hr>
+  <label for="keyIndex">Key Index</label>
+  <input id="keyIndex" type="number" class="" value="0" placeholder="Key index">
+  <label for="security">Security Level</label>
+  <select id="security" class="" id="securityLevel">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+  </select>
+
+  <label for="checksum">Checksum?</label>
+  <input id="checksum" type="checkbox" class="">
+    
+  <label for="deterministic">Deterministic?</label>
+  <input id="deterministic" type="checkbox" class="">
+  <hr>
+  
+  <label for="finalAddress">finalAddress</label>
+	<input id="finalAddress" type="text" class="" placeholder="Your address" disabled>
+  <button id="generateAddress" class="" type="button">Generate</button>
+
+	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+	<script src="./js/iota.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+
+</html>
